@@ -10,6 +10,6 @@ dataTable$Sub_metering_3<-as.numeric(levels(dataTable$Sub_metering_3))[dataTable
 dataTable$Voltage<-as.numeric(levels(dataTable$Voltage))[dataTable$Voltage]
 dataTable2 <- subset(dataTable, Date >= as.Date("2007-02-01")  & Date <= as.Date("2007-02-02"))
 png(file="plot1.png")
-hist(as.numeric(dataTable2$Global_active_power),main="Global Active Power",breaks=13,col="red",xlab="Global Activity Power (kilowatts)")
+hist(as.numeric(dataTable2$Global_active_power),main="Global Active Power",breaks=13,col="red",xlab="Global Active Power (kilowatts)")
 dev.off()
 
